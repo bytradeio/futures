@@ -384,34 +384,50 @@
 <h1 id='websocket-public-api'>Websocket Public API</h1><h2 id='market-kline'>Market KLine</h2>
 <p><a id=klines> </a></p>
 
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code> {"method":"subscribe.kline","params":{"market":"BTCUSDT","period":"15min"},"id":6288}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code> {"method":"unsubscribe.kline","params":{"market":"BTCUSDT","period":"15min"},"id":6288}
 </code></pre><h2 id='market-transaction'>Market Transaction</h2>
 <p><a id=deals> </a></p>
 
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.trade","id":1564,"params":{"market":"BTCUSDT"}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.trade","id":1564,"params":{"market":"BTCUSDT"}}
 </code></pre><h2 id='market-depth'>Market Depth</h2>
 <p><a id=Market Depth> </a></p>
 
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.depth","id":1477,"params":{"market":"BTCUSDT","merge":"0"}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.depth","id":1477,"params":{"market":"BTCUSDT","merge":"0"}}
 </code></pre><h2 id='market-quotes'>Market Quotes</h2>
 <p><a id=State> </a></p>
 
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.state","id":1953,"params":{}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.state","id":1953,"params":{}}
 </code></pre><h2 id='heartbeat'>Heartbeat</h2>
 <p><a id=Ping> </a></p>
@@ -419,22 +435,34 @@
 </code></pre><h1 id='websocket-private-api'>Websocket Private API</h1><h2 id='user-positions'>User Positions</h2>
 <p><a id=userPositions> </a></p>
 
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.position","id":8538,"params":{}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.position","id":8538,"params":{}}
 </code></pre><h2 id='user-order'>User Order</h2>
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.order","id":8538,"params":{}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.order","id":8538,"params":{}}
 </code></pre><h2 id='user-assets'>User Assets</h2>
-<p><strong>Sub</strong></p>
+<blockquote>
+<p>Sub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"subscribe.asset","id":8538,"params":{}}
 </code></pre>
-<p><strong>UbSub</strong></p>
+<blockquote>
+<p>UbSub</p>
+</blockquote>
 <pre class="highlight plaintext"><code>{"method":"unsubscribe.asset","id":8538,"params":{}}
 </code></pre><h2 id='signature'>Signature</h2><pre class="highlight plaintext"><code>{"method":"subscribe.sign","id":8538
 "params": {
