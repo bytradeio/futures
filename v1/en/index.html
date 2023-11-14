@@ -224,6 +224,10 @@
           </span>
           <span class="nav_cell nav_tab">
             <a href="/futures/v1/en/" id="btn_futures">合约API</a>
+            <a href="/spot/v1/en/" id="btn_spot">现货API</a>
+          </span>
+          <span class="nav_cell nav_tab">
+            <a href="/futures/v1/en/" id="btn_futures">合约API</a>
           </span>
         </div>
       </div>
@@ -5543,18 +5547,23 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
       </div>
     </div>
     <script>
+      const btn_spot = document.getElementById('btn_spot');
       const btn_futures = document.getElementById('btn_futures');
       const v1_url = document.getElementById('v1_url');
       const url = GetUrlRelativePath();
       if(url.indexOf('cn') != -1){
         //如果是中文环境
+        btn_spot.innerHTML = '现货API';
         btn_futures.innerHTML = '合约API';
         lang_btn.href = url.replace('cn/', 'en/');
+        btn_spot.href = btn_spot.href.replace('en/', 'cn/');
         btn_futures.href = btn_futures.href.replace('en/', 'cn/');
       }else{
         //如果是英文环境
+        btn_spot.innerHTML = 'Spot API';
         btn_futures.innerHTML = 'Futures API';
         lang_btn.href = url.replace('en/', 'cn/');
+        btn_spot.href = btn_spot.href.replace('cn/', 'en/');
         btn_futures.href = btn_futures.href.replace('cn/', 'en/');
         v1_url.href = '/futures/v1/en/';
       }
