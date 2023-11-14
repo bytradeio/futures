@@ -268,7 +268,34 @@
                     <a href="#websocket-public-api" class="toc-h2 toc-link" data-title="Websocket Public API">Websocket Public API</a>
                   </li>
                   <li>
+                    <a href="#market-kline" class="toc-h2 toc-link" data-title="Market KLine">Market KLine</a>
+                  </li>
+                  <li>
+                    <a href="#market-transaction" class="toc-h2 toc-link" data-title="Market Transaction">Market Transaction</a>
+                  </li>
+                  <li>
+                    <a href="#market-depth" class="toc-h2 toc-link" data-title="Market Depth">Market Depth</a>
+                  </li>
+                  <li>
+                    <a href="#market-quotes" class="toc-h2 toc-link" data-title="Market Quotes">Market Quotes</a>
+                  </li>
+                  <li>
+                    <a href="#heartbeat" class="toc-h2 toc-link" data-title="Heartbeat">Heartbeat</a>
+                  </li>
+                  <li>
                     <a href="#websocket-private-api" class="toc-h2 toc-link" data-title="Websocket Private API">Websocket Private API</a>
+                  </li>
+                  <li>
+                    <a href="#signature" class="toc-h2 toc-link" data-title="Signature">Signature</a>
+                  </li>
+                  <li>
+                    <a href="#user-positions" class="toc-h2 toc-link" data-title="User Positions">User Positions</a>
+                  </li>
+                  <li>
+                    <a href="#user-order" class="toc-h2 toc-link" data-title="User Order">User Order</a>
+                  </li>
+                  <li>
+                    <a href="#user-assets" class="toc-h2 toc-link" data-title="User Assets">User Assets</a>
                   </li>
               </ul>
           </li>
@@ -581,7 +608,7 @@ sign&quot;:&quot;abc123&quot;,&quot;client_id&quot;:&quot;abc123&quot;,&quot;Non
 <li>Client need to timely upload arbitrary code to check. Server will check status every 30 seconds. Links will be closed
 if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&quot;hb&quot;}</li>
 </ol>
-<h2 id='websocket-public-api'>Websocket Public API</h2><h3 id='market-kline'>Market KLine</h3><h4 id='request-parameters'>Request parameters</h4>
+<h2 id='websocket-public-api'>Websocket Public API</h2><h2 id='market-kline'>Market KLine</h2><h3 id='request-parameters'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -645,7 +672,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -704,7 +731,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center">Market name</td>
 </tr>
 </tbody></table>
-<h3 id='market-transaction'>Market Transaction</h3><h4 id='request-parameters-2'>Request parameters</h4>
+<h2 id='market-transaction'>Market Transaction</h2><h3 id='request-parameters-2'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -755,7 +782,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-2'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-2'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -794,7 +821,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center">Match type: buy, sell</td>
 </tr>
 </tbody></table>
-<h3 id='market-depth'>Market Depth</h3><h4 id='request-parameters-3'>Request parameters</h4>
+<h2 id='market-depth'>Market Depth</h2><h3 id='request-parameters-3'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -862,7 +889,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-3'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-3'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -911,7 +938,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center"></td>
 </tr>
 </tbody></table>
-<h3 id='market-quotes'>Market Quotes</h3><h4 id='request-parameters-4'>Request parameters</h4>
+<h2 id='market-quotes'>Market Quotes</h2><h3 id='request-parameters-4'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -970,7 +997,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w"> 
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-4'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-4'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -1079,7 +1106,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center"></td>
 </tr>
 </tbody></table>
-<h3 id='heartbeat'>Heartbeat</h3><h4 id='request-parameters-5'>Request parameters</h4>
+<h2 id='heartbeat'>Heartbeat</h2><h3 id='request-parameters-5'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -1102,7 +1129,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="s2">"result"</span><span class="p">:</span><span class="s2">"success"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-5'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-5'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -1111,7 +1138,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 </tr>
 </thead><tbody>
 </tbody></table>
-<h2 id='websocket-private-api'>Websocket Private API</h2><h3 id='signature'>Signature</h3><h4 id='request-parameters-6'>Request parameters</h4>
+<h2 id='websocket-private-api'>Websocket Private API</h2><h2 id='signature'>Signature</h2><h3 id='request-parameters-6'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -1159,7 +1186,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="s2">"result"</span><span class="p">:</span><span class="s2">"success"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-6'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-6'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -1168,7 +1195,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 </tr>
 </thead><tbody>
 </tbody></table>
-<h3 id='user-positions'>User Positions</h3><h4 id='request-parameters-7'>Request parameters</h4>
+<h2 id='user-positions'>User Positions</h2><h3 id='request-parameters-7'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -1230,7 +1257,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-7'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-7'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -1359,7 +1386,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center"></td>
 </tr>
 </tbody></table>
-<h3 id='user-order'>User Order</h3><h4 id='request-parameters-8'>Request parameters</h4>
+<h2 id='user-order'>User Order</h2><h3 id='request-parameters-8'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -1415,7 +1442,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-8'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-8'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
@@ -1519,7 +1546,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
 <td style="text-align: center"></td>
 </tr>
 </tbody></table>
-<h3 id='user-assets'>User Assets</h3><h4 id='request-parameters-9'>Request parameters</h4>
+<h2 id='user-assets'>User Assets</h2><h3 id='request-parameters-9'>Request parameters</h3>
 <blockquote>
 <p>Sub</p>
 </blockquote>
@@ -1565,7 +1592,7 @@ if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"error"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h4 id='data-refresh-string-list-9'>Data refresh string list</h4>
+</span></code></pre><h3 id='data-refresh-string-list-9'>Data refresh string list</h3>
 <table><thead>
 <tr>
 <th style="text-align: center">Field name</th>
