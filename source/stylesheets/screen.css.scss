@@ -72,6 +72,8 @@ header{
   .nav_box{
     position: relative;
     margin-left: 56px;
+    height: 100%;
+    display: flex;
     .nav_cell{
       position: relative;
       .nav_first{
@@ -144,6 +146,7 @@ header{
     .nav_tab{
       font-size: 16px;
       line-height: 59px;
+      height: 100%;
       a{
         color: #B0B8DB;
         display: inline-block;
@@ -785,4 +788,11 @@ header{
 
 .highlight, .highlight .w {
   background-color: $code-bg;
+}
+
+.nav_active {
+  background-color: $nav-active-bg;
+}
+header .nav_box .nav_active a {
+  color: #ffffff;
 }

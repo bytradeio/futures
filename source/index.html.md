@@ -72,7 +72,7 @@ API| Introduction                                             |Trading area|
 ## Websocket Host:
 
     futures
-    wss://futures.bytrade.io/ws
+    wss://futures.bytrade.io/wsf
 
 ## Verification Notice
 
@@ -690,7 +690,7 @@ API| Introduction                                             |Trading area|
 |    marke_name.bonus    |  string  |                    |
 
 
-# Open v2 Publish API
+# Open v2 Public API
 
 ## Get Market K-line
 
