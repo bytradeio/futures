@@ -97,9 +97,8 @@ API| Introduction                                             |Trading area|
 
 ## Websocket Public API
 
-### Market KLine
-
-#### Request parameters
+## Market KLine
+### Request parameters
 
 > Sub
 
@@ -156,7 +155,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 | Field name | Data Type |    Description     |
 |:----------:|:---------:|:------------------:|
 |    data    |   array   |                    |
@@ -170,9 +169,9 @@ API| Introduction                                             |Trading area|
 |  data.0.6  |   string   |       Amount       |
 |  data.0.7  |   string   |    Market name     |
 
-### Market Transaction
 
-#### Request parameters
+## Market Transaction
+### Request parameters
 
 > Sub
 
@@ -219,7 +218,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 |  Field name   | Data Type |      Description      |
 |:-------------:|:---------:|:---------------------:|
 |    amount     |  string   |       Quantity        |
@@ -229,9 +228,9 @@ API| Introduction                                             |Trading area|
 |     time      |   float   |      Match time       |
 |     type      |  string   | Match type: buy, sell |
 
-### Market Depth
 
-#### Request parameters
+## Market Depth
+### Request parameters
 
 > Sub
 
@@ -292,7 +291,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 |   Field name    | Data Type |      Description      |
 |:---------------:|:---------:|:---------------------:|
 |      asks       |   array   |               |
@@ -304,9 +303,9 @@ API| Introduction                                             |Trading area|
 | bids.0.0 |  string   |               |
 | bids.0.1 |  string   |               |
 
-### Market Quotes
 
-#### Request parameters
+## Market Quotes
+### Request parameters
 
 > Sub
 
@@ -364,7 +363,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 |     Field name      | Data Type |      Description      |
 |:-------------------:|:---------:|:---------------------:|
 | market_name  |  object   |               |
@@ -388,9 +387,9 @@ API| Introduction                                             |Trading area|
 | market_name.sell_total |  string   |               |
 | market_name.buy_total |  string   |               |
 
-### Heartbeat
 
-#### Request parameters
+## Heartbeat
+### Request parameters
 
 > Sub
 
@@ -411,15 +410,15 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 |     Field name      | Data Type |      Description      |
 |:-------------------:|:---------:|:---------------------:|
 
+
 ## Websocket Private API
 
-### Signature
-
-#### Request parameters
+## Signature
+### Request parameters
 
 > Sub
 
@@ -447,69 +446,21 @@ API| Introduction                                             |Trading area|
 
 ```json
 {
-  "id":0,
-  "method":"update.position",
-  "result":{
-    "event":1,
-    "position":{
-      "position_id":4784242,
-      "create_time":1699944061.968543,
-      "update_time":1699944061.968656,
-      "user_id":9108,
-      "market":"BTCUSDT",
-      "type":2,
-      "side":2,
-      "amount":"0.0444",
-      "close_left":"0.0444",
-      "open_price":"36341.6",
-      "open_margin":"6.4063",
-      "margin_amount":"16.1356",
-      "leverage":"100",
-      "profit_unreal":"11.0184",
-      "liq_price":"0",
-      "mainten_margin":"0.005",
-      "mainten_margin_amount":"8.0678",
-      "adl_sort":1,
-      "roe":"0.6828",
-      "margin_ratio":"",
-      "stop_loss_price":"-",
-      "take_profit_price":"-"
-    }
-  },
+  "id":7681,
+  "method":"sign",
+  "result":"success",
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 | Field name | Data Type |    Description     |
 |:----------:|:---------:|:------------------:|
-|   event    |  integer  |                    |
-|  position  |  object   |                    |
-| position.position_id  |  integer  |                    |
-| position.create_time  |   float   |                    |
-| position.update_time  |   float   |                    |
-| position.user_id  |  integer  |                    |
-| position.market  |  string   |                    |
-| position.type  |  integer  |                    |
-| position.side  |  integer  |                    |
-| position.amount  |  string   |                    |
-| position.close_left  |  string   |                    |
-| position.open_price  |  string   |                    |
-| position.open_margin  |  string   |                    |
-| position.margin_amount  |  string   |                    |
-| position.leverage  |  string   |                    |
-| position.profit_unreal  |  string   |                    |
-| position.liq_price  |  string   |                    |
-| position.mainten_margin  |  string   |                    |
-| position.mainten_margin_amount  |  string   |                    |
-| position.adl_sort  |  integer  |                    |
-| position.roe  |  string  |                    |
-| position.margin_ratio  |  string  |                    |
-| position.stop_loss_price  |  string  |                    |
-| position.take_profit_price  |  string  |                    |
 
-### User Positions
 
-#### Request parameters
+
+## User Positions
+
+### Request parameters
 
 > Sub
 
@@ -570,7 +521,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 | Field name | Data Type |    Description     |
 |:----------:|:---------:|:------------------:|
 |   event    |  integer  |                    |
@@ -598,9 +549,9 @@ API| Introduction                                             |Trading area|
 | position.stop_loss_price  |  string  |                    |
 | position.take_profit_price  |  string  |                    |
 
-### User Order
 
-#### Request parameters
+## User Order
+### Request parameters
 
 > Sub
 
@@ -655,7 +606,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 | Field name | Data Type |    Description     |
 |:----------:|:---------:|:------------------:|
 |   order_id    |  integer  |                    |
@@ -678,9 +629,10 @@ API| Introduction                                             |Trading area|
 |  stop_loss_price  |   string   |                    |
 |  take_profit_price  |   string   |                    |
 
-### User Assets
 
-#### Request parameters
+## User Assets
+
+### Request parameters
 
 > Sub
 
@@ -725,7 +677,7 @@ API| Introduction                                             |Trading area|
   "error":null
 }
 ```
-#### Data refresh string list
+### Data refresh string list
 |    Field name     | Data Type |    Description     |
 |:-----------------:|:---------:|:------------------:|
 |    marke_name     |  object   |                    |
