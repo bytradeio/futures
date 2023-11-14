@@ -26,12 +26,12 @@ Verification free for below portals:
 
 API| Introduction | Trading area |
 ----------------------|----------|--------------|
-[GET /open/api/v2/market/kline](#market-kline)  | Get Market K-line | Futures      |
-[GET  /open/api/v2/market/list](#market-list)  | Get Market List | Futures      |
-[GET /open/api/v2/market/deals](#market-deals)  | Get Market Transactions     | Futures         |
-[GET /open/api/v2/market/depth](#market-depth)  | Get Market Depth | Futures         |
-[GET /open/api/v2/market/state](#market-state)  | Get Market Status | Futures         |
-[GET /open/api/v2/market/state/all](#market-state-all)  | Get all market status | Futures         |
+[GET /open/api/v2/market/kline](#get-market-k-line)  | Get Market K-line | Futures      |
+[GET  /open/api/v2/market/list](#get-market-list)  | Get Market List | Futures      |
+[GET /open/api/v2/market/deals](#get-market-transactions)  | Get Market Transactions     | Futures         |
+[GET /open/api/v2/market/depth](#get-market-depth)  | Get Market Depth | Futures         |
+[GET /open/api/v2/market/state](#get-market-status)  | Get Market Status | Futures         |
+[GET /open/api/v2/market/state/all](#get-all-market-status)  | Get all market status | Futures         |
 
 ## Private API
 
@@ -39,29 +39,29 @@ Eligible to access portals:
 
 API| Introduction                                             |Trading area|
 ----------------------|----------------------------------------------------------|---------------------|
-[POST /open/api/v2/position/margin](#position-margin)  | Adjust position margin  |Futures|
-[GET /open/api/v2/order/deals](#order-deals)  | Get User Transaction   |Futures|
-[GET /open/api/v2/order/finished](#order-finished)  | Get Completed Orders                                        |Futures|
-[POST /open/api/v2/order/market](#order-market)  | Market Order                                       |Futures|
-[POST /open/api/v2/order/cancel/all](#order-cancel-all)  | Cancel all orders in a single market                                        |Futures|
-[GET /open/api/v2/order/detail](#order-details)  | Get Order Details                                 |Futures|
-[POST /open/api/v2/order/cancel](#order-cancel)  | Cancel Order                                          |Futures|
-[POST /open/api/v2/order/limit](#order-limit)  | Submit Limit Order                                 |Futures|
-[GET /open/api/v2/order/pending](#order-pending)  | Get the entrusted order                |Futures|
-[POST /open/api/v2/order/stop](#order-stop)  | Submit stop order                                            |Futures|
-[POST /open/api/v2/order/stop/cancel](#order-stop-cancel)  | Cancel stop order                                          |Futures|
-[POST /open/api/v2/order/stop/cancel/all](#order-stop-cancel-all)  | Cancel all stop orders for a single market                                    |Futures|
-[GET /open/api/v2/order/stop/pending](#order-stop-pending)  | Get the stop order in the commission                             |Futures|
-[GET /open/api/v2/order/stop/finished](#order-stop-finished)  | Get completed stop order |Futures|
-[POST /open/api/v2/setting/leverage](#setting-leverage)  | Adjust market opening leverage/position mode |Futures|
-[GET /open/api/v2/setting/leverage](#get-setting-leverage)  | Query the market opening leverage/position mode |Futures|
-[GET /open/api/v2/asset/query](#asset-query)  | Query Assets |Futures|
-[GET /open/api/v2/asset/history](#aseet-history)  | Query Asset Bill |Futures|
-[GET /open/api/2/position/pending](#position-pending)  | User Positions |Futures|
-[GET /open/api/2/position/margin](#position-margin)  | Get adjustable margin |Futures|
-[POST /open/api/v2/position/close/limit](#position-close-limit)  | Limit Close |Futures|
-[POST /open/api/v2/position/close/market](#position-close-market)  | Market Close |Futures|
-[POST /open/api/v2/position/close/stop](#position-close-stop)  | Position Take Profit And Stop Loss Setting/Modification |Futures|
+[POST /open/api/v2/position/margin](#adjust-position-margin)  | Adjust position margin  |Futures|
+[GET /open/api/v2/order/deals](#get-user-transaction)  | Get User Transaction   |Futures|
+[GET /open/api/v2/order/finished](#get-completed-orders)  | Get Completed Orders                                        |Futures|
+[POST /open/api/v2/order/market](#market-order)  | Market Order                                       |Futures|
+[POST /open/api/v2/order/cancel/all](#cancel-all-orders-in-a-single-market)  | Cancel all orders in a single market                                        |Futures|
+[GET /open/api/v2/order/detail](#get-order-details)  | Get Order Details                                 |Futures|
+[POST /open/api/v2/order/cancel](#cancel-order)  | Cancel Order                                          |Futures|
+[POST /open/api/v2/order/limit](#submit-limit-order)  | Submit Limit Order                                 |Futures|
+[GET /open/api/v2/order/pending](#get-the-entrusted-order)  | Get the entrusted order                |Futures|
+[POST /open/api/v2/order/stop](#submit-stop-order)  | Submit stop order                                            |Futures|
+[POST /open/api/v2/order/stop/cancel](#cancel-stop-order)  | Cancel stop order                                          |Futures|
+[POST /open/api/v2/order/stop/cancel/all](#cancel-all-stop-orders-for-a-single-market)  | Cancel all stop orders for a single market                                    |Futures|
+[GET /open/api/v2/order/stop/pending](#get-the-stop-order-in-the-commission)  | Get the stop order in the commission                             |Futures|
+[GET /open/api/v2/order/stop/finished](#get-completed-stop-order)  | Get completed stop order |Futures|
+[POST /open/api/v2/setting/leverage](#adjust-market-opening-leverage-position-mode)  | Adjust market opening leverage/position mode |Futures|
+[GET /open/api/v2/setting/leverage](#query-the-market-opening-leverage-position-mode)  | Query the market opening leverage/position mode |Futures|
+[GET /open/api/v2/asset/query](#query-assets)  | Query Assets |Futures|
+[GET /open/api/v2/asset/history](#query-asset-bill)  | Query Asset Bill |Futures|
+[GET /open/api/2/position/pending](#user-positions)  | User Positions |Futures|
+[GET /open/api/2/position/margin](#get-adjustable-margin)  | Get adjustable margin |Futures|
+[POST /open/api/v2/position/close/limit](#limit-close)  | Limit Close |Futures|
+[POST /open/api/v2/position/close/market](#market-close)  | Market Close |Futures|
+[POST /open/api/v2/position/close/stop](#position-take-profit-and-stop-loss-settingmodification)  | Position Take Profit And Stop Loss Setting/Modification |Futures|
 
 # Connection Guide
 
