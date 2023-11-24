@@ -57,8 +57,8 @@ API| Introduction                                             |Trading area|
 [GET /open/api/v2/setting/leverage](#query-the-market-opening-leverage-position-mode)  | Query the market opening leverage/position mode |Futures|
 [GET /open/api/v2/asset/query](#query-assets)  | Query Assets |Futures|
 [GET /open/api/v2/asset/history](#query-asset-bill)  | Query Asset Bill |Futures|
-[GET /open/api/2/position/pending](#user-positions)  | User Positions |Futures|
-[GET /open/api/2/position/margin](#get-adjustable-margin)  | Get adjustable margin |Futures|
+[GET /open/api/v2/position/pending](#user-positions)  | User Positions |Futures|
+[GET /open/api/v2/position/margin](#get-adjustable-margin)  | Get adjustable margin |Futures|
 [POST /open/api/v2/position/close/limit](#limit-close)  | Limit Close |Futures|
 [POST /open/api/v2/position/close/market](#market-close)  | Market Close |Futures|
 [POST /open/api/v2/position/close/stop](#position-take-profit-and-stop-loss-settingmodification)  | Position Take Profit And Stop Loss Setting/Modification |Futures|
@@ -2295,11 +2295,11 @@ curl "https://futures.bytrade.io/open/api/v2/position/pending"
 ## Get adjustable margin
 
 ```shell
-curl "https://futures.bytrade.io/open/api/2/position/margin"
+curl "https://futures.bytrade.io/open/api/v2/position/margin"
 ```
 
 ### HTTP query
-- GET `/open/api/2/position/margin`
+- GET `/open/api/v2/position/margin`
 
 ### Request parameters
 
