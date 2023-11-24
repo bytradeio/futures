@@ -1,4 +1,4 @@
-# spot-doc
+# futures
 ### Prerequisites
 
 You're going to need:
