@@ -601,7 +601,8 @@ API| Introduction                                             |Trading area|
     "create_time":1699944061.968535,
     "status":3,
     "stop_loss_price":"-",
-    "take_profit_price":"-"
+    "take_profit_price":"-",
+    "client_oid":"36341ddd362363263626"
   },
   "error":null
 }
@@ -1435,7 +1436,7 @@ curl "https://futures.bytrade.io/open/api/v2/order/market"
 |market|string|Yes|     Market name	     |
 |side|integer|Yes|  Side，1 sell，2 buy	  |
 |quantity|string|Yes|      Quantity	       |
-|client_oid|string|Yes|User-defined order id	|
+|client_oid|string|No|User-defined order id	|
 |is_stop|boolean|No|Is it a take profit order or a stop loss order?	|
 |stop_loss_price|string|No|Stop loss price		|
 |stop_loss_price_type|integer|No|Stop price type，1 last price，2 index price，3 sign price			|
@@ -1543,7 +1544,8 @@ curl "https://futures.bytrade.io/open/api/v2/order/detail"
     "create_time": 1697616547.901067, 
     "status": 3, 
     "stop_loss_price": "-", 
-    "take_profit_price": "-"
+    "take_profit_price": "-",
+    "client_oid":"36341ddd362363263626"
   }
 }
 
@@ -1708,7 +1710,8 @@ curl "https://futures.bytrade.io/open/api/v2/order/cancel"
         "create_time": 1697621580.978632, 
         "status": 1, 
         "stop_loss_price": "-", 
-        "take_profit_price": "-"
+        "take_profit_price": "-",
+        "client_oid":"36341ddd362363263626"
       }
     ], 
     "page": 1, 
@@ -2215,11 +2218,11 @@ curl "https://futures.bytrade.io/open/api/v2/asset/history"
 ## User Positions
 
 ```shell
-curl "https://futures.bytrade.io/open/api/2/position/pending"
+curl "https://futures.bytrade.io/open/api/v2/position/pending"
 ```
 
 ### HTTP query
-- GET `/open/api/2/position/pending`
+- GET `/open/api/v2/position/pending`
 
 ### Request parameters
 
@@ -2630,3 +2633,4 @@ if __name__ == "__main__":
     loop.run_until_complete(startup())
 
 ```
+
