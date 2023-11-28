@@ -599,8 +599,7 @@ the url link</li>
 <h1 id='websocket-guide'>WebSocket Guide</h1>
 <ol>
 <li>Need verification before subscription</li>
-<li>Verification method: {&quot;op&quot;:&quot;apilogin&quot;,&quot;sign&quot;:&quot;&quot;,&quot;client_id&quot;:&quot;&quot;,&quot;Nonce&quot;:&quot;&quot;,&quot;ts&quot;: int type}, e.g: {&quot;op&quot;:&quot;apilogin&quot;,&quot;
-sign&quot;:&quot;abc123&quot;,&quot;client_id&quot;:&quot;abc123&quot;,&quot;Nonce&quot;:&quot;1&quot;,&quot;ts&quot;: 1576207749}</li>
+<li>Verification method: {&quot;method&quot;:&quot;sign&quot;,params:{&quot;sign&quot;:&quot;&quot;,&quot;client_id&quot;:&quot;&quot;,&quot;nonce&quot;:&quot;&quot;,&quot;ts&quot;: int type},&quot;id&quot;: int type}, e.g:  {&quot;method&quot;:&quot;sign&quot;,params:{&quot;sign&quot;:&quot;abc123&quot;,&quot;client_id&quot;:&quot;abc123&quot;,&quot;nonce&quot;:&quot;abc123&quot;,&quot;ts&quot;: 1702342344}, &quot;id&quot;: 3532}</li>
 <li>Client need to timely upload arbitrary code to check. Server will check status every 30 seconds. Links will be closed
 if No information received. {&quot;op&quot;:&quot;sub&quot;, &quot;topic&quot;:&quot;hb&quot;}</li>
 </ol>
