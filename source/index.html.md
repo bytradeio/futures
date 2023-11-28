@@ -90,8 +90,7 @@ API| Introduction                                             |Trading area|
 # WebSocket Guide
 
 1. Need verification before subscription
-2. Verification method: {"op":"apilogin","sign":"","client_id":"","Nonce":"","ts": int type}, e.g: {"op":"apilogin","
-   sign":"abc123","client_id":"abc123","Nonce":"1","ts": 1576207749}
+2. Verification method: {"method":"sign",params:{"sign":"","client_id":"","nonce":"","ts": int type},"id": int type}, e.g:  {"method":"sign",params:{"sign":"abc123","client_id":"abc123","nonce":"abc123","ts": 1702342344}, "id": 3532}
 3. Client need to timely upload arbitrary code to check. Server will check status every 30 seconds. Links will be closed
    if No information received. {"op":"sub", "topic":"hb"}
 
@@ -2633,4 +2632,5 @@ if __name__ == "__main__":
     loop.run_until_complete(startup())
 
 ```
+
 
